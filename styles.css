@@ -35,10 +35,122 @@ body {
     /* overflow: hidden; */
 }
 
+.pop-up:target {
+    visibility: visible;
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.pop-up {
+    display: flex;
+    position: fixed;
+    z-index: 4;
+    /* background-color: black; */
+    height: 100vh;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0%;
+    transition: 0.2s;
+}
+
+
+.pop-up-box {
+    margin: auto;
+    justify-self: center;
+    z-index: 5;
+    height: 300px;
+    width: 300px;
+    /* background-color: red; */
+}
+
+.pop-up-text {
+    /* background-color: red; */
+    margin-top: -10px;
+}
+
+.pop-up-bg {
+    background-color: rgba(0, 0, 0, 0.5);;
+    position: fixed;
+    z-index: 3;
+    height: 100vh;
+    width: 100%;
+}
+
+.pop-up-top {
+    display: flex;
+    height: 44px;
+}
+
+.stone-top-left {
+    background-image: url(./img/stone-top-left.png);
+    width: 44px;
+    /* background-color: red; */
+}
+
+.stone-top {
+    flex: 1;
+    background-image: url(./img/stone-top.png);
+    min-width: 128px;
+    /* background-color: aqua; */
+}
+
+.stone-top-right {
+    width: 44px;
+    background-image: url(./img/stone-top-right.png);
+    /* background-color: blue; */
+}
 
 
 
 
+
+.pop-up-center {
+    display: flex;
+    min-height: 128px;
+    height: calc(100% - 88px);
+}
+
+.stone-left {
+    background-image: url(./img/stone-left.png);
+    width: 44px;
+    background-color: chartreuse;
+}
+
+.stone-middle {
+    background-image: url(./img/stone-bg.png);
+    flex: 1;
+    background-color: chocolate;
+}
+
+.stone-right {
+    background-image: url(./img/stone-right.png);
+    background-color: crimson;
+    width: 44px;
+}
+
+
+
+
+.pop-up-bottom {
+    display: flex;
+    height: 44px;
+}
+
+.stone-bottom-left {
+    background-image: url(img/stone-bottom-left.png);
+    width: 44px;
+}
+
+.stone-bottom {
+    flex: 1;
+    background-image: url(img/stone-bottom.png);
+    min-width: 128px;
+}
+
+.stone-bottom-right {
+    background-image: url(img/stone-bottom-right.png);
+    width: 44px;
+}
 
 /* LOGO */
 
