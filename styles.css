@@ -93,7 +93,7 @@ body {
 
 .okay-button {
     background-image: url(./img/okay-button.png);
-    width: 46px;
+    width: 54px;
     height: 21px;
 }
 
@@ -214,7 +214,6 @@ body {
 .logo { 
     display: flex; 
     justify-content: center; 
-    align-items: center; 
     padding: 40px 20px 20px;
     /* background-color: aqua;  */
 } 
@@ -256,10 +255,28 @@ body {
     scrollbar-width: none;
 }
 
+.scroll-text p:last-of-type {
+    /* margin-bottom: 30px; */
+}
+
 .scroll {
     height: 100%;
     z-index: 1;
 }
+
+
+.get {
+    /* background-color: red; */
+    margin: 30px auto 30px;
+    background-image: url(./img/get-button.png);
+    height: 21px;
+    width: 64px;
+}
+
+.get:hover {
+    background-image: url(./img/get-button-pressed.png);
+}
+
 
 /* ------------------------------ */
 
@@ -359,3 +376,4 @@ body {
 }
 
 /* ------------------------------ */
+
