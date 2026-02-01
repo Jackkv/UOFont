@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'UOFont';
+  src: url('./font/UOFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+    font-family: 'UOfont';
+    font-size: 20px;
+    color: white;
+    text-shadow: 
+    0px -1px black, /* UP */
+    0px 1px black, /* DOWN */
+    -1px 0px black, /* LEFT */
+    1px 0px black, /* RIGHT */
+    -1px 1px black, /* UP LEFT */
+    1px -1px black, /* UP RIGHT */
+    -1px -1px black, /* DOWN LEFT */
+    1px 1px black; /* DOWN RIGHT */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: purple; */
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(./img/background.png);
+    background-size: cover;
+    background-position: center;
+    /* overflow: hidden; */
+}
+
+
+
+
+
+
+/* LOGO */
+
+.logo { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 40px 20px 20px;
+    /* background-color: aqua;  */
+} 
+
+
+.logo img { 
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    /* background-color: red;  */
+
+}
+
+/* ------------------------------ */
+
+
+
+
+
+
+.scroll-box {
+    margin: 0px auto;
+    /* background-color: cyan; */
+    position: relative;
+    max-width: 600px;
+    height: calc(100vh - 122px - 56px);
+}
+
+
+.scroll-text {
+    position: absolute;
+    margin: 29px;
+    padding: 1px;
+    /* background-color: red; */
+    height: calc(100% - 60px);
+    z-index: 2;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.scroll {
+    height: 100%;
+    z-index: 1;
+}
+
+
+/* SCROLL HEADER START */
+
+.scroll-header {
+    display: flex;
+    height: 140px;
+}
+
+.scroll-top-left {
+    min-width: 114px;
+    /* background-color: red; */
+    background-image:url(./img/scroll-top-left.png);
+}
+
+.scroll-top-middle {
+    flex: 1;
+    min-width: 57px;
+    /* background-color: green; */
+    background-image: url(./img/scroll-top-middle.png);
+}
+
+.scroll-top-right {
+    min-width: 114px;
+    /* background-color: blue; */
+    background-image: url(./img/scroll-top-right.png);
+}
+
+/* ------------------------------ */
+
+
+
+
+
+/* SCROLL CENTER START */
+
+.scroll-center {
+    display: flex;
+    height: calc(100% - 280px);
+    min-height: 42px;
+}
+
+.scroll-middle-left {
+    min-width: 114px;
+    /* background-color: brown; */
+    background-image: url(./img/scroll-middle-left.png);
+}
+
+.scroll-middle {
+    flex: 1;
+    min-width: 57px;
+    /* background-color: chartreuse; */
+    background-image: url(./img/scroll-middle.png);
+}
+
+.scroll-middle-right {
+    min-width: 114px;
+    /* background-color: chocolate; */
+    background-image: url(./img/scroll-middle-right.png);
+}
+
+/* ------------------------------ */
+
+
+
+
+
+/* SCROLL FOOTER START */
+
+.scroll-footer {
+    display: flex;
+    height: 140px;
+}
+
+.scroll-bottom-left {
+    min-width: 114px;
+    /* background-color: blueviolet; */
+    background-image: url(./img/scroll-bottom-left.png);
+}
+
+.scroll-bottom-middle {
+    flex: 1;
+    min-width: 57px;
+    /* background-color:darkcyan; */
+    background-image: url(./img/scroll-bottom-middle.png);
+}
+
+.scroll-bottom-right {
+    min-width: 114px;
+    /* background-color: darksalmon; */
+    background-image: url(./img/scroll-bottom-right.png);
+}
+
+/* ------------------------------ */
