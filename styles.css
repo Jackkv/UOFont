@@ -25,7 +25,6 @@ html {
 }
 
 body {
-    /* background-color: purple; */
     height: 100vh;
     padding: 0px;
     margin: 0px;
@@ -33,7 +32,6 @@ body {
     background-size: cover;
     background-position: center;
     cursor: url("./img/cursor.png") 0 0, auto;
-    /* overflow: hidden; */
 }
 
 .pop-up:target {
@@ -51,11 +49,163 @@ a {
 }
 
 a:hover {
-    color: #a7fdff;
+    color: #18e600;
 }
 
 /* ------------------------------ */
 
+
+
+
+
+/* LOGO */
+
+.logo { 
+    display: flex; 
+    justify-content: center; 
+    padding: 40px 20px 20px;
+} 
+
+
+.logo img { 
+    max-width: 100%; 
+}
+
+/* ------------------------------ */
+
+
+
+
+
+/* SCROLL */
+
+.scroll-box {
+    margin: 0px auto;
+    position: relative;
+    max-width: 600px;
+    height: calc(100vh - 202px);
+}
+
+
+.scroll-text {
+    position: absolute;
+    margin: 29px;
+    padding-left: 1px;
+    height: calc(100% - 60px);
+    z-index: 2;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.scroll {
+    height: 100%;
+    z-index: 1;
+}
+
+.get {
+    margin: 0px auto 20px;
+    background-image: url(./img/get-button.png);
+    height: 21px;
+    width: 64px;
+}
+
+.get:hover {
+    background-image: url(./img/get-button-hover.png);
+}
+
+.get:active {
+    background-image: url(./img/get-button-active.png);
+}
+
+/* ------------------------------ */
+
+
+
+
+
+/* SCROLL HEADER START */
+
+.scroll-header {
+    display: flex;
+    height: 140px;
+}
+
+.scroll-top-left {
+    min-width: 114px;
+    background-image:url(./img/scroll-top-left.png);
+}
+
+.scroll-top-middle {
+    flex: 1;
+    min-width: 57px;
+    background-image: url(./img/scroll-top-middle.png);
+}
+
+.scroll-top-right {
+    min-width: 114px;
+    background-image: url(./img/scroll-top-right.png);
+}
+
+/* ------------------------------ */
+
+
+
+
+
+/* SCROLL MIDDLE START */
+
+.scroll-center {
+    display: flex;
+    height: calc(100% - 280px);
+    min-height: 42px;
+}
+
+.scroll-middle-left {
+    min-width: 114px;
+    background-image: url(./img/scroll-middle-left.png);
+}
+
+.scroll-middle {
+    flex: 1;
+    min-width: 57px;
+    background-image: url(./img/scroll-middle.png);
+}
+
+.scroll-middle-right {
+    min-width: 114px;
+    background-image: url(./img/scroll-middle-right.png);
+}
+
+/* ------------------------------ */
+
+
+
+
+
+/* SCROLL FOOTER START */
+
+.scroll-footer {
+    display: flex;
+    height: 140px;
+}
+
+.scroll-bottom-left {
+    min-width: 114px;
+    background-image: url(./img/scroll-bottom-left.png);
+}
+
+.scroll-bottom-middle {
+    flex: 1;
+    min-width: 57px;
+    background-image: url(./img/scroll-bottom-middle.png);
+}
+
+.scroll-bottom-right {
+    min-width: 114px;
+    background-image: url(./img/scroll-bottom-right.png);
+}
+
+/* ------------------------------ */
 
 
 
@@ -66,7 +216,6 @@ a:hover {
     display: flex;
     position: fixed;
     z-index: 4;
-    /* background-color: black; */
     height: 100vh;
     width: 100%;
     visibility: hidden;
@@ -76,26 +225,7 @@ a:hover {
 
 .pop-up-box {
     margin: auto;
-    justify-self: center;
     z-index: 5;
-    /* height: 300px; */
-    /* width: 300px; */
-    /* background-color: red; */
-}
-
-.pop-up-content {
-    display: flex;
-    flex-direction: column;
-    /* background-color: red; */
-    /* height: 100%; */
-    /* width: 300px; */
-}
-
-.pop-up-text {
-    /* background-color: blue; */
-    /* height: 100%; */
-    display: flex;
-    flex-direction: column;
 }
 
 .pop-up-text p {
@@ -106,7 +236,6 @@ a:hover {
 .pop-up-button {
     display: flex;
     justify-content: center;
-    /* background-color: green; */
 }
 
 .okay-button {
@@ -132,13 +261,21 @@ a:hover {
     width: 100%;
 }
 
-/* ------------------------------ */
-
-
-.ps-image {
+.pop-up-text img {
     max-width: 100%;
     margin: auto;
 }
+
+.css {
+    margin-top: -10px;
+    text-align: left;
+}
+
+/* ------------------------------ */
+
+
+
+
 
 
 
@@ -152,20 +289,17 @@ a:hover {
 .stone-top-left {
     background-image: url(./img/stone-top-left.png);
     width: 44px;
-    /* background-color: red; */
 }
 
 .stone-top {
     flex: 1;
     background-image: url(./img/stone-top.png);
     min-width: 128px;
-    /* background-color: aqua; */
 }
 
 .stone-top-right {
     width: 44px;
     background-image: url(./img/stone-top-right.png);
-    /* background-color: blue; */
 }
 
 /* ------------------------------ */
@@ -238,191 +372,21 @@ a:hover {
 
 
 
-/* LOGO */
-
-.logo { 
-    display: flex; 
-    justify-content: center; 
-    padding: 40px 20px 20px;
-    /* background-color: aqua;  */
-} 
-
-
-.logo img { 
-    max-width: 100%; 
-    height: auto; 
-    display: block; 
-    /* background-color: red;  */
-
-}
-
-/* ------------------------------ */
-
-
-
-
-
-/* SCROLL */
-
-.scroll-box {
-    margin: 0px auto;
-    /* background-color: cyan; */
-    position: relative;
-    max-width: 600px;
-    height: calc(100vh - 202px);
-}
-
-
-.scroll-text {
-    position: absolute;
-    margin: 29px;
-    padding: 1px;
-    /* background-color: red; */
-    height: calc(100% - 60px);
-    z-index: 2;
-    overflow-y: scroll;
-    scrollbar-width: none;
-}
-
-.scroll {
-    height: 100%;
-    z-index: 1;
-}
-
-.get {
-    /* background-color: red; */
-    margin: 20px auto;
-    background-image: url(./img/get-button.png);
-    height: 21px;
-    width: 64px;
-}
-
-.get:hover {
-    background-image: url(./img/get-button-hover.png);
-}
-
-.get:active {
-    background-image: url(./img/get-button-active.png);
-}
-
-/* ------------------------------ */
-
-
-
-
-
-/* SCROLL HEADER START */
-
-.scroll-header {
-    display: flex;
-    height: 140px;
-}
-
-.scroll-top-left {
-    min-width: 114px;
-    /* background-color: red; */
-    background-image:url(./img/scroll-top-left.png);
-}
-
-.scroll-top-middle {
-    flex: 1;
-    min-width: 57px;
-    /* background-color: green; */
-    background-image: url(./img/scroll-top-middle.png);
-}
-
-.scroll-top-right {
-    min-width: 114px;
-    /* background-color: blue; */
-    background-image: url(./img/scroll-top-right.png);
-}
-
-/* ------------------------------ */
-
-
-
-
-
-/* SCROLL MIDDLE START */
-
-.scroll-center {
-    display: flex;
-    height: calc(100% - 280px);
-    min-height: 42px;
-}
-
-.scroll-middle-left {
-    min-width: 114px;
-    /* background-color: brown; */
-    background-image: url(./img/scroll-middle-left.png);
-}
-
-.scroll-middle {
-    flex: 1;
-    min-width: 57px;
-    /* background-color: chartreuse; */
-    background-image: url(./img/scroll-middle.png);
-}
-
-.scroll-middle-right {
-    min-width: 114px;
-    /* background-color: chocolate; */
-    background-image: url(./img/scroll-middle-right.png);
-}
-
-/* ------------------------------ */
-
-
-
-
-
-/* SCROLL FOOTER START */
-
-.scroll-footer {
-    display: flex;
-    height: 140px;
-}
-
-.scroll-bottom-left {
-    min-width: 114px;
-    /* background-color: blueviolet; */
-    background-image: url(./img/scroll-bottom-left.png);
-}
-
-.scroll-bottom-middle {
-    flex: 1;
-    min-width: 57px;
-    /* background-color:darkcyan; */
-    background-image: url(./img/scroll-bottom-middle.png);
-}
-
-.scroll-bottom-right {
-    min-width: 114px;
-    /* background-color: darksalmon; */
-    background-image: url(./img/scroll-bottom-right.png);
-}
-
-/* ------------------------------ */
-
+/* FOOTER START */
 
 .copyright {
-    /* background-color: green; */
     height: 100%;
     max-width: 600px;
     margin: 10px auto;
     text-align: center;
-    overflow-y: scroll;
-    scrollbar-width: none;
 }
 
 .copyright p {
-    /* text-shadow: none; */
     opacity: 70%;
     padding: 0px;
     margin: 0px;
 }
 
-@media (max-width: 600px) {
-    
-}
+/* ------------------------------ */
+
 
