@@ -83,7 +83,7 @@ a:hover {
     margin: 0px auto;
     position: relative;
     max-width: 600px;
-    height: calc(100vh - 202px);
+    height: calc(100vh - 244px);
 }
 
 
@@ -349,9 +349,9 @@ a:hover {
 
 
 
-/* POP UP BOTTOM */
+/* POP UP FOOTER START */
 
-.pop-up-bottom {
+.pop-up-footer {
     display: flex;
     height: 44px;
 }
