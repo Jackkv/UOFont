@@ -8,20 +8,21 @@
     <title>UOFont - Ultima Online Font</title>
 </head>
 <body>
-    <div class="pop-up" id="pop">
+    <div class="pop-up" id="photoshop">
             <div class="pop-up-box">
                 <div class="pop-up-top">
                     <div class="stone-top-left"></div>
                     <div class="stone-top"></div>
-                    <div class="stone-top-right">
-                    </div>
-                </div>
+                    <div class="stone-top-right"></div>
+            </div>
                 <div class="pop-up-center">
                     <div class="stone-left"></div>
                     <div class="stone-middle">
                         <div class="pop-up-content">
                             <div class="pop-up-text">
-                                <p>text bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+                                <p>In Photoshop go into the text layer style and apply as shown.</p>
+                                <p>You need 7 strokes to have no transparent pixels, otherwise 3 are good enough.</p>
+                                <img src="./img/photoshop.png" alt="Photoshop styles" class="ps-image">
                             </div>
                             <div class="pop-up-button">
                                 <a href="#home">
@@ -42,7 +43,43 @@
                 </div>
             </div>
             <a href="#home" class="pop-up-bg"></a>
+    </div>
+    <div class="pop-up" id="gimp">
+        
+        <div class="pop-up-box">
+            <div class="pop-up-top">
+                <div class="stone-top-left"></div>
+                <div class="stone-top"></div>
+                <div class="stone-top-right"></div>
+            </div>
+                <div class="pop-up-center">
+                    <div class="stone-left"></div>
+                    <div class="stone-middle">
+                        <div class="pop-up-content">
+                            <div class="pop-up-text">
+                                <p>In Gimp go to Filters > Light and Shadow > Drop Shadow and apply as shown below.</p>
+                                <img src="./img/gimp.png" alt="" class="ps-image">
+                            </div>
+                            <div class="pop-up-button">
+                                <a href="#home">
+                                    <div class="okay-button">
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="stone-right"></div>
+                </div>
+                <div class="pop-up-bottom">
+                    <div class="stone-bottom-left"></div>
+                    <div class="stone-bottom"></div>
+                    <div class="stone-bottom-right"></div>
+                </div>
         </div>
+        <a href="#home" class="pop-up-bg"></a>
+    </div>
     <header>
         <div class="logo" id="home">
             <img src="./img/UOFont.png" alt="UOFont logo">
@@ -61,10 +98,10 @@
                     The font only works as intended when rendered at 20px, 15pt, or 1.25em. If you don't care about keeping the classic outline, you can scale it by an integer to maintain the aspect ratio (20, 40, 60, etc.). Otherwise, you would first need to create the text as normal, apply the outline, then merge it into a layer and scale it as an image, like how i did for the logo on this page.
                 </p>
                 <p>
-                    In Photoshop, be sure to disable text antialiasing and use at least 7 layers of stroke, click here for more details.
+                    In Photoshop, be sure to disable text antialiasing and use at least 7 layers of stroke, click <a href="#photoshop">here</a> for more details.
                 </p>
                 <p>
-                    In Gimp, disable text antialiasing and for the outline, i recommend using Filters > Light and Shadow > Drop Shadow, click here for more details.
+                    In Gimp, disable text antialiasing and for the outline, i recommend using Filters > Light and Shadow > Drop Shadow, click <a href="#gimp">here</a> for more details.
                 </p>
                 <p>
                     On Browsers, i made an html shadow that only works if the font size is 20px, you can get it here.
