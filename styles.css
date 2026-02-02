@@ -32,6 +32,7 @@ body {
     background-image: url(./img/background.png);
     background-size: cover;
     background-position: center;
+    cursor: url("./img/cursor.png") 0 0, auto;
     /* overflow: hidden; */
 }
 
@@ -40,6 +41,16 @@ body {
     opacity: 100%;
     transition: 0.5s;
 }
+
+/* LINKS */
+
+a {
+    color: #68eefe ;
+    text-decoration: none;
+    cursor: unset;
+}
+
+/* ------------------------------ */
 
 
 
@@ -98,7 +109,11 @@ body {
 }
 
 .okay-button:hover {
-    background-image: url(./img/okay-button-pressed.png);
+    background-image: url(./img/okay-button-hover.png);
+}
+
+.okay-button:active {
+    background-image: url(./img/okay-button-active.png);
 }
 
 .pop-up-bg {
@@ -255,15 +270,10 @@ body {
     scrollbar-width: none;
 }
 
-.scroll-text p:last-of-type {
-    /* margin-bottom: 30px; */
-}
-
 .scroll {
     height: 100%;
     z-index: 1;
 }
-
 
 .get {
     /* background-color: red; */
@@ -274,9 +284,12 @@ body {
 }
 
 .get:hover {
-    background-image: url(./img/get-button-pressed.png);
+    background-image: url(./img/get-button-hover.png);
 }
 
+.get:active {
+    background-image: url(./img/get-button-active.png);
+}
 
 /* ------------------------------ */
 
