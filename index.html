@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/uo.ico">
+    <title>UOFont - Ultima Online Font</title>
+</head>
+<body>
+    <div class="pop-up" id="photoshop">
+        <div class="pop-up-box">
+            <div class="pop-up-top">
+                <div class="stone-top-left"></div>
+                <div class="stone-top"></div>
+                <div class="stone-top-right"></div>
+        </div>
+            <div class="pop-up-center">
+                <div class="stone-left"></div>
+                    <div class="stone-middle">
+                        <div class="pop-up-content">
+                            <div class="pop-up-text">
+                                <p>In Photoshop go into the text layer style and apply as shown.</p>
+                                <p>You need 7 strokes to have no transparent pixel, otherwise 3 are good enough.</p>
+                                <img src="./img/photoshop.png" alt="Photoshop styles" class="ps-image">
+                            </div>
+                            <div class="pop-up-button">
+                                <a href="#home">
+                                    <div class="okay-button"></div>
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="stone-right"></div>
+                </div>
+                <div class="pop-up-footer">
+                    <div class="stone-bottom-left"></div>
+                    <div class="stone-bottom"></div>
+                    <div class="stone-bottom-right"></div>
+                </div>
+            </div>
+            <a href="#home" class="pop-up-bg"></a>
+    </div>
+    <div class="pop-up" id="gimp"> 
+        <div class="pop-up-box">
+            <div class="pop-up-top">
+                <div class="stone-top-left"></div>
+                <div class="stone-top"></div>
+                <div class="stone-top-right"></div>
+            </div>
+                <div class="pop-up-center">
+                    <div class="stone-left"></div>
+                    <div class="stone-middle">
+                        <div class="pop-up-content">
+                            <div class="pop-up-text">
+                                <p>In Gimp go to Filters > Light and Shadow > Drop Shadow and apply as shown below.</p>
+                                <img src="./img/gimp.png" alt="Gimp Filters">
+                            </div>
+                            <div class="pop-up-button">
+                                <a href="#home">
+                                    <div class="okay-button"></div>
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="stone-right"></div>
+                </div>
+                <div class="pop-up-footer">
+                    <div class="stone-bottom-left"></div>
+                    <div class="stone-bottom"></div>
+                    <div class="stone-bottom-right"></div>
+                </div>
+        </div>
+        <a href="#home" class="pop-up-bg"></a>
+    </div>
+    <div class="pop-up" id="css"> 
+        <div class="pop-up-box">
+            <div class="pop-up-top">
+                <div class="stone-top-left"></div>
+                <div class="stone-top"></div>
+                <div class="stone-top-right"></div>
+            </div>
+                <div class="pop-up-center">
+                    <div class="stone-left"></div>
+                    <div class="stone-middle">
+                        <div class="pop-up-content">
+                            <div class="css">
+                                <p>Just copy and paste the code below</p>
+                                <p>
+                                    text-shadow:<br> 
+                                    0px -1px black, /* UP */<br>
+                                        0px 1px black, /* DOWN */<br>
+                                        -1px 0px black, /* LEFT */<br>
+                                        1px 0px black, /* RIGHT */<br>
+                                        -1px 1px black, /* UP LEFT */<br>
+                                        1px -1px black, /* UP RIGHT */<br>
+                                        -1px -1px black, /* DOWN LEFT */<br>
+                                        1px 1px black; /* DOWN RIGHT */<br>
+                                </p>
+                            </div>
+                            <div class="pop-up-button">
+                                <a href="#home">
+                                    <div class="okay-button"></div>
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="stone-right"></div>
+                </div>
+                <div class="pop-up-footer">
+                    <div class="stone-bottom-left"></div>
+                    <div class="stone-bottom"></div>
+                    <div class="stone-bottom-right"></div>
+                </div>
+        </div>
+        <a href="#home" class="pop-up-bg"></a>
+    </div>
+    <header>
+        <div class="logo" id="home">
+            <img src="./img/UOFont.png" alt="UOFont logo">
+        </div>
+    </header>
+    <main>
+        <div class="scroll-box">
+            <div class="scroll-text">
+                <p>
+                    Hello, this page serves as a demo and as a nice way to share my Ultima Online font. Here is the <a href="https://github.com/Jackkv/UOFont" target="_blank">github</a> page, below there is the download button.
+                </p>
+                <p>
+                    I created the font by tracing every pixel by hand in Inkscape, then i imported everything in FontForge. It's a pixel-perfect replica. I used a <a href="https://en.wikipedia.org/wiki/Windows_Glyph_List_4#Character_table" target="_blank">WGL4</a> 1.5 template, however, not every character was available in the game. It should still support most languages, as all the Latin, Greek, and Cyrillic characters are included.
+                </p>
+                <p>
+                    The font only works as intended when rendered at 20px, 15pt, or 1.25em. If you don't care about keeping the classic outline, you can scale it by an integer to maintain the aspect ratio (20, 40, 60, etc.). Otherwise, you would first need to create the text as normal, apply the outline, then merge it into a layer and scale it as an image, like how i did for the logo on this page.
+                </p>
+                <p>
+                    In Photoshop, be sure to disable text antialiasing and use at least 7 layers of stroke, click <a href="#photoshop">here</a> for more details.
+                </p>
+                <p>
+                    In Gimp, disable text antialiasing and for the outline, i recommend using Filters > Light and Shadow > Drop Shadow, click <a href="#gimp">here</a> for more details.
+                </p>
+                <p>
+                    On Browsers, i made a <a href="#css">CSS</a> shadow that only works if the font size is 20px.
+                </p>
+                <p>
+                    If you use this font in your project, please consider giving credit. Thanks.
+                </p>
+                <a href="https://github.com/Jackkv/UOFont/releases/download/1.0/UOFont.zip">
+                    <div class="get">
+                    </div>
+                </a>
+            </div>
+            <div class="scroll">
+                <div class="scroll-header">
+                    <div class="scroll-top-left"></div>
+                    <div class="scroll-top-middle"></div>
+                    <div class="scroll-top-right"></div>
+                </div>
+                <div class="scroll-center">
+                    <div class="scroll-middle-left"></div>
+                    <div class="scroll-middle"></div>
+                    <div class="scroll-middle-right"></div>
+                </div>
+                <div class="scroll-footer">
+                    <div class="scroll-bottom-left"></div>
+                    <div class="scroll-bottom-middle"></div>
+                    <div class="scroll-bottom-right"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>This is a fan project not affiliated with Electronic Arts or Broadsword. </p>
+            <p>Ultima Online™ is a trademark of Electronic Arts Inc.</p>
+        </div>
+    </footer>
+</body>
+</html>

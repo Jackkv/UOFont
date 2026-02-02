@@ -1,0 +1,398 @@
+@font-face {
+  font-family: 'UOFont';
+  src: url('./font/UOFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+    font-family: 'UOfont';
+    font-size: 20px;
+    color: white;
+    text-shadow: 
+    0px -1px black, /* UP */
+    0px 1px black, /* DOWN */
+    -1px 0px black, /* LEFT */
+    1px 0px black, /* RIGHT */
+    -1px 1px black, /* UP LEFT */
+    1px -1px black, /* UP RIGHT */
+    -1px -1px black, /* DOWN LEFT */
+    1px 1px black; /* DOWN RIGHT */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(./img/background.png);
+    background-size: cover;
+    background-position: center;
+    cursor: url("./img/cursor.png") 0 0, auto;
+}
+
+.pop-up:target {
+    visibility: visible;
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+/* LINKS */
+
+a {
+    color: #68eefe ;
+    text-decoration: none;
+    cursor: unset;
+}
+
+a:hover {
+    color: #18e600;
+}
+
+/* ------------------------------ */
+
+
+
+
+
+/* LOGO */
+
+.logo { 
+    display: flex; 
+    justify-content: center; 
+    padding: 40px 20px 20px;
+} 
+
+
+.logo img { 
+    max-width: 100%; 
+}
+
+/* ------------------------------ */
+
+
+
+
+
+/* SCROLL */
+
+.scroll-box {
+    margin: 0px auto;
+    position: relative;
+    max-width: 600px;
+    height: calc(100vh - 244px);
+}
+
+
+.scroll-text {
+    position: absolute;
+    margin: 29px;
+    padding-left: 1px;
+    height: calc(100% - 60px);
+    z-index: 2;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.scroll {
+    height: 100%;
+    z-index: 1;
+}
+
+.get {
+    margin: 0px auto 20px;
+    background-image: url(./img/get-button.png);
+    height: 21px;
+    width: 64px;
+}
+
+.get:hover {
+    background-image: url(./img/get-button-hover.png);
+}
+
+.get:active {
+    background-image: url(./img/get-button-active.png);
+}
+
+/* ------------------------------ */
+
+
+
+
+
+/* SCROLL HEADER START */
+
+.scroll-header {
+    display: flex;
+    height: 140px;
+}
+
+.scroll-top-left {
+    min-width: 114px;
+    background-image:url(./img/scroll-top-left.png);
+}
+
+.scroll-top-middle {
+    flex: 1;
+    min-width: 57px;
+    background-image: url(./img/scroll-top-middle.png);
+}
+
+.scroll-top-right {
+    min-width: 114px;
+    background-image: url(./img/scroll-top-right.png);
+}
+
+/* ------------------------------ */
+
+
+
+
+
+/* SCROLL MIDDLE START */
+
+.scroll-center {
+    display: flex;
+    height: calc(100% - 280px);
+    min-height: 42px;
+}
+
+.scroll-middle-left {
+    min-width: 114px;
+    background-image: url(./img/scroll-middle-left.png);
+}
+
+.scroll-middle {
+    flex: 1;
+    min-width: 57px;
+    background-image: url(./img/scroll-middle.png);
+}
+
+.scroll-middle-right {
+    min-width: 114px;
+    background-image: url(./img/scroll-middle-right.png);
+}
+
+/* ------------------------------ */
+
+
+
+
+
+/* SCROLL FOOTER START */
+
+.scroll-footer {
+    display: flex;
+    height: 140px;
+}
+
+.scroll-bottom-left {
+    min-width: 114px;
+    background-image: url(./img/scroll-bottom-left.png);
+}
+
+.scroll-bottom-middle {
+    flex: 1;
+    min-width: 57px;
+    background-image: url(./img/scroll-bottom-middle.png);
+}
+
+.scroll-bottom-right {
+    min-width: 114px;
+    background-image: url(./img/scroll-bottom-right.png);
+}
+
+/* ------------------------------ */
+
+
+
+
+/* POP UP START */
+
+.pop-up {
+    display: flex;
+    position: fixed;
+    z-index: 4;
+    height: 100vh;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0%;
+    transition: 0.2s;
+}
+
+.pop-up-box {
+    margin: auto;
+    z-index: 5;
+}
+
+.pop-up-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pop-up-text p {
+    margin-top: -10px;
+    text-align: center;
+}
+
+.pop-up-button {
+    display: flex;
+    justify-content: center;
+}
+
+.okay-button {
+    background-image: url(./img/okay-button.png);
+    margin-top: 20px;
+    width: 54px;
+    height: 21px;
+}
+
+.okay-button:hover {
+    background-image: url(./img/okay-button-hover.png);
+}
+
+.okay-button:active {
+    background-image: url(./img/okay-button-active.png);
+}
+
+.pop-up-bg {
+    background-color: rgba(0, 0, 0, 0.5);;
+    position: fixed;
+    z-index: 3;
+    height: 100vh;
+    width: 100%;
+}
+
+.pop-up-text img {
+    max-width: 100%;
+    margin: auto;
+}
+
+.css {
+    margin-top: -10px;
+    text-align: left;
+}
+
+/* ------------------------------ */
+
+
+
+
+
+
+
+/* POP UP HEADER */
+
+.pop-up-top {
+    display: flex;
+    height: 44px;
+}
+
+.stone-top-left {
+    background-image: url(./img/stone-top-left.png);
+    width: 44px;
+}
+
+.stone-top {
+    flex: 1;
+    background-image: url(./img/stone-top.png);
+    min-width: 128px;
+}
+
+.stone-top-right {
+    width: 44px;
+    background-image: url(./img/stone-top-right.png);
+}
+
+/* ------------------------------ */
+
+
+
+
+
+
+/* POP UP MIDDLE */
+
+.pop-up-center {
+    display: flex;
+    min-height: 128px;
+    height: calc(100% - 88px);
+}
+
+.stone-left {
+    background-image: url(./img/stone-left.png);
+    width: 44px;
+    min-height: 44px;
+    background-color: chartreuse;
+}
+
+.stone-middle {
+    background-image: url(./img/stone-bg.png);
+    flex: 1;
+    background-color: chocolate;
+}
+
+.stone-right {
+    background-image: url(./img/stone-right.png);
+    background-color: crimson;
+    width: 44px;
+    min-height: 44px;
+}
+
+/* ------------------------------ */
+
+
+
+
+
+/* POP UP FOOTER START */
+
+.pop-up-footer {
+    display: flex;
+    height: 44px;
+}
+
+.stone-bottom-left {
+    background-image: url(img/stone-bottom-left.png);
+    width: 44px;
+}
+
+.stone-bottom {
+    flex: 1;
+    background-image: url(img/stone-bottom.png);
+    min-width: 128px;
+}
+
+.stone-bottom-right {
+    background-image: url(img/stone-bottom-right.png);
+    width: 44px;
+}
+
+/* ------------------------------ */
+
+
+
+
+
+/* FOOTER START */
+
+.copyright {
+    height: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.copyright p {
+    opacity: 70%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* ------------------------------ */
+
+
