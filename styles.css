@@ -50,6 +50,10 @@ a {
     cursor: unset;
 }
 
+a:hover {
+    color: #a7fdff;
+}
+
 /* ------------------------------ */
 
 
@@ -255,7 +259,7 @@ a {
     /* background-color: cyan; */
     position: relative;
     max-width: 600px;
-    height: calc(100vh - 122px - 56px);
+    height: calc(100vh - 202px);
 }
 
 
@@ -277,7 +281,7 @@ a {
 
 .get {
     /* background-color: red; */
-    margin: 30px auto 30px;
+    margin: 20px auto;
     background-image: url(./img/get-button.png);
     height: 21px;
     width: 64px;
@@ -389,4 +393,26 @@ a {
 }
 
 /* ------------------------------ */
+
+
+.copyright {
+    /* background-color: green; */
+    height: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    text-align: center;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.copyright p {
+    /* text-shadow: none; */
+    opacity: 70%;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (max-width: 600px) {
+    
+}
 
